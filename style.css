@@ -1,1 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    background-color: beige;
+    margin: auto;
+}
+
+div,
+button {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    text-align: center;
+}
+
+button {
+    width: 70px;
+    border-color: black;
+    background-color: yellowgreen;
+    color: white;
+}
+
+button:hover {
+    background-color: aquamarine;
+    color: black;
+    cursor: pointer;
+}
