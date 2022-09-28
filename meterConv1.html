@@ -13,45 +13,32 @@
     <h1>Meter Converter</h1>
     <fieldset style="width: 30%;">
         <h3>Input</h3>
-        <div>
+        <form action="">
             <div>
-<<<<<<< HEAD
-                Millimeter <br> <input type="text" placeholder="Miliimeter">
-            </div>
-
-            <div>
-                Centimeter <br><input type="text" placeholder="Centimeter">
-            </div>
-
-=======
-             Millimeter <br> <input type="number" placeholder="Miliimeter">
-            </div> 
-            &nbsp;
-            <div>
-             Centimeter <br><input type="number" placeholder="Centimeter">       
-            </div>
-            &nbsp;
->>>>>>> 58475b2e6ea093ca3519f5920f97c12af3684431
-            <div>
-                Decimeter <br> <input type="number" placeholder="Decimeter">
-            </div>
-<<<<<<< HEAD
-
-=======
-            &nbsp;
->>>>>>> 58475b2e6ea093ca3519f5920f97c12af3684431
-            <div>
-                Kilometer <br> <input type="number" placeholder="Kilometer">
-            </div>
-<<<<<<< HEAD
-
-            <div>
-                Meter <br> <input type="text" placeholder="Meter">
-            </div>
-
-
-        </div>
-        <button>Clear</button>
+                <div>
+                 Millimeter <br> <input type="number" placeholder="Miliimeter" oninput="LengthCon(this.value)" onchange="LengthCon(this.value)">
+                </div> 
+                &nbsp;
+                <div>
+                 Centimeter <br><input type="number" placeholder="Centimeter" oninput="LengthCon(this.value)" onchange="LengthCon(this.value)">       
+                </div>
+                &nbsp;     
+                <div>
+                    Decimeter <br> <input type="number" placeholder="Decimeter" oninput="LengthCon(this.value)" onchange="LengthCon(this.value)">
+                </div>
+                &nbsp;
+                <div>
+                    Kilometer <br> <input type="number" placeholder="Kilometer" oninput="LengthCon(this.value)" onchange="LengthCon(this.value)">
+                </div>
+                &nbsp;
+                 <div>
+                     Meter <br> <input type="number" placeholder="Meter" oninput="LengthCon(this.value)" onchange="LengthCon(this.value)">
+                 </div>
+                 &nbsp;
+                 
+              </div>
+              <input type="reset" value="Clear">
+        </form>
     </fieldset>
 
 
