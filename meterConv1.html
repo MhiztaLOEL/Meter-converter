@@ -16,28 +16,28 @@
         <form action="">
             <div>
                 <div>
-                 Millimeter <br> <input type="number" placeholder="Miliimeter">
-                </div> 
-            
-                <div>
-                 Centimeter <br><input type="number" placeholder="Centimeter">       
+                    <label for="Millimeter"> Millimeter </label><br> <input type="number" placeholder="Miliimeter" id="milli" oninput="convertToOthers('Millimeter', this.value)">
                 </div>
-                    
+
                 <div>
-                    Decimeter <br> <input type="number" placeholder="Decimeter">
+                    <label for="Centimeter">Centimeter</label> <br><input type="number" placeholder="Centimeter" id="centi" oninput="convertToOthers('Centimeter', this.value)">
                 </div>
-                
+
                 <div>
-                    Kilometer <br> <input type="number" placeholder="Kilometer">
+                    <label for=" Decimeter"> Decimeter</label> <br> <input type="number" placeholder="Decimeter" id="deci" oninput="convertToOthers('Decimeter', this.value)">
                 </div>
-                
-                 <div>
-                     Meter <br> <input type="number" placeholder="Meter">
-                 </div>
-                
-                 
-              </div>
-                <button type="reset">Clear</button>
+
+                <div>
+                    Kilometer <br> <input type="number" placeholder="Kilometer" id="kilo" oninput="convertToOthers('Kilometer', this.value)">
+                </div>
+
+                <div>
+                    Meter <br> <input type="number" placeholder="Meter" id="meter" oninput="convertToOthers('Meter', this.value)">
+                </div>
+
+
+            </div>
+            <button type="reset">Clear</button>
         </form>
     </fieldset>
 
@@ -45,4 +45,3 @@
 
 
 </html>
-
