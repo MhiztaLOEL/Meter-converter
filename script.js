@@ -1,62 +1,72 @@
-let millimeter = document.getElementById("milli");
-let centimeter = document.getElementById("centi");
-let decimeter = document.getElementById("deci");
-let kilometer = document.getElementById("kilo");
-let meter = document.getElementById("meter");
+var inputCm = document.getElementById("inputCm");
+var inputInches = document.getElementById("inputInches");
+var inputFeet = document.getElementById("inputFeet");
+var inputMeter = document.getElementById("inputMeter");
+var inputKilometer = document.getElementById("inputKilometer");
+var inputMile = document.getElementById("inputMile");
+var inputYard = document.getElementById("inputYard");
 
-// function addintion 
-function milliToOther(val) {
-    centi.value = val / 10;
-    deci.value = val / 100;
-    kilo.value = val / 1000000;
-    meter.value = val / 1000;
-}
+function meterConverter(source, value) {
+    value = parseFloat(value);
 
-function centiToOther(val) {
-    milli.value = val * 10;
-    deci.value = val / 10;
-    kilo.value = val / 100000;
-    meter.value = val / 100;
-}
+    if (source == "inputCm") {
+        inputInches.value = (value * 0.39370).toFixed(2);
+        inputFeet.value = (value * 0.032808).toFixed(3);
+        inputMeter.value = (value / 100).toFixed(3);
+        inputKilometer.value = (value / 100000).toFixed(6);
+        inputMile.value = (value * 0.0000062137).toFixed(6);
+        inputYard.value = (value * 0.010936).toFixed(3);
 
-function deciToOther(val) {
-    milli.value = val * 100;
-    centi.value = val * 10;
-    kilo.value = val / 10000;
-    meter.value = val / 10;
-}
+    };
+    if (source == "inputInches") {
+        inputCm.value = (value / 0.39370).toFixed(2);
+        inputFeet.value = (value * 0.083333).toFixed(3);
+        inputMeter.value = (value / 39.370).toFixed(3);
+        inputKilometer.value = (value / 39370).toFixed(6);
+        inputMile.value = (value * 0.000015783).toFixed(6);
+        inputYard.value = (value * 0.027778).toFixed(3);
 
-function kiloToOther(val) {
-    centi.value = val * 100000;
-    deci.value = val * 10000;
-    milli.value = val * 1000000;
-    meter.value = val * 1000;
-}
+    };
+    if (source == "inputFeet") {
+        inputCm.value = (value / 0.032808).toFixed(2);
+        inputInches.value = (value * 39.370).toFixed(2);
+        inputMeter.value = (value / 3.2808).toFixed(2);
+        inputKilometer.value = (value / 3280.8).toFixed(5);
+        inputMile.value = (value * 0.00018939).toFixed(5);
+        inputYard.value = (value * 0.33333).toFixed(2);
+    }
+    if (source == "inputMeter") {
+        inputCm.value = (value / 0.01).toFixed(2);
+        inputInches.value = (value * 39.370).toFixed(2);
+        inputKilometer.value = (value / 1000).toFixed(5);
+        inputMile.value = (value * 0.00062137).toFixed(5);
+        inputYard.value = (value * 1.0936).toFixed(2);
+        inputFeet.value = (value * 3.2808).toFixed(2);
+    }
+    if (source == "inputKilometer") {
+        inputCm.value = (value * 10000).toFixed();
+        inputInches.value = (value * 39370).toFixed();
+        inputMeter.value = (value * 1000).toFixed();
+        inputMile.value = (value * 0.62137).toFixed(2);
+        inputYard.value = (value * 1093.6).toFixed();
+        inputFeet.value = (value * 3.2808).toFixed();
+    }
+    if (source == "inputMile") {
+        inputCm.value = (value * 10000).toFixed();
+        inputInches.value = (value * 39370).toFixed();
+        inputMeter.value = (value / 0.00062137).toFixed();
+        inputKilometer.value = (value / 0.62137).toFixed(2);
+        inputYard.value = (value * 1760).toFixed();
+        inputFeet.value = (value * 5280).toFixed();
 
-function meterToOther(val) {
-    centi.value = val * 100;
-    deci.value = val * 10;
-    kilo.value = val / 1000;
-    milli.value = val * 1000;
-}
+    }
+    if (source == "inputYard") {
+        inputCm.value = (value / 0.010936).toFixed();
+        inputInches.value = (value * 36).toFixed();
+        inputMeter.value = (value / 1.0936).toFixed(2);
+        inputKilometer.value = (value / 1093.6).toFixed(5);
+        inputMile.value = (value / 0.00056818).toFixed(5);
+        inputFeet.value = (value * 3).toFixed();
 
-
-function convertToOthers(convertFrom, value) {
-    switch (convertFrom) {
-        case "milli":
-            milliToOther(parseFloat(value));
-            break;
-        case "centi":
-            centiToOther(parseFloat(value));
-            break;
-        case "deci":
-            deciToOther(parseFloat(value));
-            break;
-        case "kilo":
-            kiloToOther(parseFloat(value));
-            break;
-        case "meter":
-            meterToOther(parseFloat(value));
-            break;
     }
 }
