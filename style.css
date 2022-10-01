@@ -6,16 +6,17 @@
 
 .container {
     text-align: center;
-    margin: 2% 30%;
+    margin: 2% 10%;
     border-top: 5px solid rgba(0, 0, 0, 0.7);
     border-bottom: 5px solid rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     box-shadow: 2px 3px 4px 3px rgba(0, 0, 0, 0.3);
+    min-width: 400px;
 }
 
 .text {
     margin: 3%;
-    font-size: 0.5vh;
+    font-size: 30px;
 }
 
 .text p {
@@ -63,5 +64,11 @@ input {
     }
     #inputKilometer {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .text {
+        font-size: 0.5vh
     }
 }
