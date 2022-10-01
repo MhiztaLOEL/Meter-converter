@@ -15,7 +15,7 @@
 
 .text {
     margin: 3%;
-    font-size: 2rem;
+    font-size: 1vh;
 }
 
 .text p {
@@ -53,7 +53,7 @@ input {
 
 @media only screen and (max-width:768px) {
     .text {
-        font-size: 20px;
+        font-size: 20px !important;
     }
     .field {
         display: block;
