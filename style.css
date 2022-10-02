@@ -15,7 +15,6 @@
 
 .text {
     margin: 3%;
-    font-size: 30px;
 }
 
 .text p {
@@ -31,12 +30,10 @@
     align-items: center;
     column-gap: 20px;
     margin-bottom: 20px;
-    margin-left: 8%;
 }
 
 .field label {
     min-width: 70px;
-    text-align: left;
     height: 20px;
     font-weight: bolder;
     font-size: 20px;
@@ -44,19 +41,16 @@
 
 input {
     display: block;
-    width: 70%;
+    width: 75%;
     padding: 8px;
     border-radius: 5px;
 }
 
 #inputKilometer {
-    width: 64%;
+    width: 69%;
 }
 
 @media only screen and (max-width:768px) {
-    .text {
-        font-size: 20px !important;
-    }
     .field {
         display: block;
     }
@@ -65,11 +59,5 @@ input {
     }
     #inputKilometer {
         width: 100%;
-    }
-}
-
-@media only screen and (max-width:480px) {
-    .text {
-        font-size: 0.5vh
     }
 }
