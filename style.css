@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url(meter.jpg);
+}
+
 .container {
     text-align: center;
     margin: 2% 30%;
@@ -11,6 +15,7 @@
     border-bottom: 5px solid rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     box-shadow: 2px 3px 4px 3px rgba(0, 0, 0, 0.3);
+    background-color: yellow;
 }
 
 .text {
@@ -44,10 +49,20 @@ input {
     width: 75%;
     padding: 8px;
     border-radius: 5px;
+    background-color: transparent;
 }
 
 #inputKilometer {
     width: 69%;
+}
+
+.reset {
+    width: 10%;
+    /* display: center;
+    justify-content: center; */
+    margin: 30px auto 5% auto;
+    color: white;
+    background-color: yellowgreen;
 }
 
 @media only screen and (max-width:768px) {
