@@ -8,6 +8,7 @@ body {
     background-image: url(images/bg-image37.jpg);
     background-size: cover;
     position: relative;
+    background-repeat: no-repeat;
 }
 
 h2 {
