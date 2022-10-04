@@ -5,21 +5,33 @@
 }
 
 body {
-    background-image: url(meter.jpg);
+    background-image: url(images/bg-image37.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+.bg-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
 }
 
 .container {
     text-align: center;
-    margin: 2% 30%;
-    border-top: 5px solid rgba(0, 0, 0, 0.7);
-    border-bottom: 5px solid rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    box-shadow: 2px 3px 4px 3px rgba(0, 0, 0, 0.3);
-    background-color: yellow;
+    margin: 30px 30%;
+    border-radius: 15px;
+    padding-top: 5px;
+    box-shadow: 3px 3px 5px #cbced1;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
-.text {
-    margin: 3%;
+.box-container .text {
+    margin: 2%;
 }
 
 .text p {
@@ -45,24 +57,21 @@ body {
 }
 
 input {
+    outline: none;
+    border: none;
+    height: 35px;
+    padding: 5px .5em 5px 5px;
+    background: #ecf0f3;
+    border-radius: 6px;
+    box-shadow: inset 4px 4px 4px #cbced1, inset 4px 4px 4px #cbced1;
     display: block;
     width: 75%;
-    padding: 8px;
-    border-radius: 5px;
-    background-color: transparent;
+    font-size: 18px;
+    color: black;
 }
 
 #inputKilometer {
     width: 69%;
-}
-
-.reset {
-    width: 10%;
-    /* display: center;
-    justify-content: center; */
-    margin: 30px auto 5% auto;
-    color: white;
-    background-color: yellowgreen;
 }
 
 @media only screen and (max-width:768px) {

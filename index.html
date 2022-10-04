@@ -10,50 +10,57 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="text">
-            <h2>METER CONVERTER</h2>
-            <p>Type a value in any of the fields to convert between meter measurements</p>
+    <div class="bg-overlay">
+        <div class="box-container">
+            <div class="container">
+                <div class="text">
+                    <h2>METER CONVERTER</h2>
+                    <p>Type a value in any of the fields to convert between meter measurements</p>
+                </div>
+                <div class="field-container">
+                    <div class="field">
+                        <label> CM: </label>
+                        <input type="number" placeholder="Enter value in cm" id="inputCm" oninput="meterConverter(this.id, this.value)" onchange="meterConverter(this.id, this.value)">
+
+                    </div>
+                    <div class="field">
+                        <label> Inches:</label>
+                        <input type="number" placeholder="Enter value in inches" id="inputInches" oninput="meterConverter(this.id, this.value)" onchange="meterConverter(this.id, this.value)">
+
+                    </div>
+                    <div class="field">
+                        <label> Feet:</label>
+                        <input type="number" placeholder="Enter value in feet" id="inputFeet" oninput="meterConverter(this.id, this.value)" onchange="meterConverter(this.id, this.value)">
+
+                    </div>
+                    <div class="field">
+                        <label> Meters:</label>
+                        <input type="number" placeholder="Enter value in meter" id="inputMeter" oninput="meterConverter(this.id, this.value)" onchange="meterConverter(this.id, this.value)">
+
+                    </div>
+                    <div class="field">
+                        <label> Kilometers:</label>
+                        <input type="number" placeholder="Enter value in kilometer" id="inputKilometer" oninput="meterConverter(this.id, this.value)" onchange="meterConverter(this.id, this.value)">
+
+                    </div>
+                    <div class="field">
+                        <label> Miles:</label>
+                        <input type="number" placeholder="Enter value in miles" id="inputMile" oninput="meterConverter(this.id, this.value)" onchange="meterConverter(this.id, this.value)">
+
+                    </div>
+                    <div class="field">
+                        <label> Yards:</label>
+                        <input type="number" placeholder="Enter value in yard" id="inputYard" oninput="meterConverter(this.id, this.value)" onchange="meterConverter(this.id, this.value)">
+
+                    </div>
+                </div>
+            </div>
+
+
         </div>
-        <div class="field-container">
-            <div class="field">
-                <label> CM: </label>
-                <input type="number" placeholder="Enter value in cm" id="inputCm" oninput="meterConverter(this.id, this.value)" onchange="meterConverter(this.id, this.value)">
 
-            </div>
-            <div class="field">
-                <label> Inches:</label>
-                <input type="number" placeholder="Enter value in inches" id="inputInches" oninput="meterConverter(this.id, this.value)" onchange="meterConverter(this.id, this.value)">
-
-            </div>
-            <div class="field">
-                <label> Feet:</label>
-                <input type="number" placeholder="Enter value in feet" id="inputFeet" oninput="meterConverter(this.id, this.value)" onchange="meterConverter(this.id, this.value)">
-
-            </div>
-            <div class="field">
-                <label> Meters:</label>
-                <input type="number" placeholder="Enter value in meter" id="inputMeter" oninput="meterConverter(this.id, this.value)" onchange="meterConverter(this.id, this.value)">
-
-            </div>
-            <div class="field">
-                <label> Kilometers:</label>
-                <input type="number" placeholder="Enter value in kilometer" id="inputKilometer" oninput="meterConverter(this.id, this.value)" onchange="meterConverter(this.id, this.value)">
-
-            </div>
-            <div class="field">
-                <label> Miles:</label>
-                <input type="number" placeholder="Enter value in miles" id="inputMile" oninput="meterConverter(this.id, this.value)" onchange="meterConverter(this.id, this.value)">
-
-            </div>
-            <div class="field">
-                <label> Yards:</label>
-                <input type="number" placeholder="Enter value in yard" id="inputYard" oninput="meterConverter(this.id, this.value)" onchange="meterConverter(this.id, this.value)">
-
-            </div>
-        </div>
-        <input type="reset" class="reset" value="reset" onclick="reset">
     </div>
+
 
 
     <script type="text/javascript" src="script.js"></script>
