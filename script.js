@@ -1,10 +1,10 @@
-var inputCm = document.getElementById("inputCm");
-var inputInches = document.getElementById("inputInches");
-var inputFeet = document.getElementById("inputFeet");
-var inputMeter = document.getElementById("inputMeter");
-var inputKilometer = document.getElementById("inputKilometer");
-var inputMile = document.getElementById("inputMile");
-var inputYard = document.getElementById("inputYard");
+let inputCm = document.getElementById("inputCm");
+let inputInches = document.getElementById("inputInches");
+let inputFeet = document.getElementById("inputFeet");
+let inputMeter = document.getElementById("inputMeter");
+let inputKilometer = document.getElementById("inputKilometer");
+let inputMile = document.getElementById("inputMile");
+let inputYard = document.getElementById("inputYard");
 
 function meterConverter(source, value) {
     value = parseFloat(value);
